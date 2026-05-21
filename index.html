@@ -10,11 +10,11 @@
 </head>
 <body>
     <header class="navbar navbar-expand-lg sticky-top shadow-sm custom-header">
-    <div class ="container-fluid">
-        <a href="index.html">HEALTHY BITES</a>
+    <div class ="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand position-absolute start-50 translate-middle-x fw-bold text-primary fs-4"href="index.html">HEALTHY BITES</a>
         <div class="d-flex">
-            <a href="my_recipes.html">MY RECIPES</a>
-            </div>
+        <a class="btn btn-outline-primary fw-bold" href="my_recipes.html">MY RECIPES</a>
+        </div>
     </div>
     </header>
     <div class="container-fluid">
@@ -39,10 +39,32 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
-    </div>        
+            </nav>      
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
 
+        <div class="pb-2 mb-4 border-bottom">
+            <h1 class="h2 text-primary">Welcome to Healthy Bites</h1>
+        </div>
+        <p class="lead mb-5">Discover the delicious healthy meals of tomorrow</p>
+        <section class="bg-light p-4 p-md-5 rounded border border-primary border-opacity-25 shadow-sm">
+            <h3 class="h4 mb-3 text-primary">Sign up for our Newsletter</h3>
+            <form id="newsletterForm" class="row g-3">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="emailAddress" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddress" required>
+                </div>
+                <div class="col-12 mt-4">
+                    <button class="btn btn-primary px-4" type="submit">Subscribe</button>
+                </div>
+            </form>
+        </section>
+    </main>
+        </div> 
+    </div> 
 </body>
 
 </html>
