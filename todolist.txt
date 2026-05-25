@@ -1,0 +1,10 @@
+finish all web pages
+toggle the sidebar
+make sure any recipes saved appear on my recipes
+add trending meals
+add more meals to all recipes
+
+clean up sticky 
+comment on code
+before testing vs after testing 
+
