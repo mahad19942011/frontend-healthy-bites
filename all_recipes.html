@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy Bites - Home</title>
+    <title>Healthy Bites - All Recipes</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top shadow-sm custom-header">
-    <div class ="container-fluid d-flex justify-content-between align-items-center">
-        <a class="navbar-brand position-absolute start-50 translate-middle-x fw-bold text-primary fs-4"href="index.html">HEALTHY BITES</a>
+    <header class="navbar navbar-expand-lg sticky-top shadow-sm bg-white custom-header">
+    <div class ="container-fluid d-flex justify-content-between align-items-center flex-nowrap">
+        <button class="navbar-toggler d-md-none border-0 px-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto fw-bold text-primary fs-5 fs-md-4 px-2 text-truncate" href="index.html">HEALTHY BITES</a>
         <div class="d-flex">
-        <a class="btn btn-outline-primary fw-bold" href="my_recipes.html">MY RECIPES</a>
+            <a class="btn btn-outline-primary btn-sm fw-bold text-nowrap" href="my_recipes.html">MY RECIPES</a>
         </div>
     </div>
     </header>
@@ -110,27 +113,223 @@
 
           <div class="col-lg-9">
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-5">
 
                 <div class="col">
                     <div class="card h-100 shadow-sm">
-                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-between align-items-center rounded-top" style="height: 200px">
+                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-center align-items-center rounded-top" style="height: 200px">
                             <span class="text-muted">Image here</span>
                         </div>
-                        <div class="card-body">
-                        <span class="badge bg-success">V</span>
-                        <span class="badge bg-info text-dark">15 mins</span>
-                        <span class="badge bg-info text-dark">Snack</span>
-                        <h5 class="card-title fw-bold">Ricecakes</h5>
-                    </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-success">V</span>
+                                <span class="badge bg-info text-dark">15 mins</span>
+                                <span class="badge bg-secondary">Snack</span>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Ricecakes</h5>
+                            <button class="btn btn-outline-primary w-100 mt-auto recipe-btn" data-bs-toggle="modal" data-bs-target="#masterRecipeModal" data-title="Ricecakes" data-desc="A light, crunchy 15-minute vegetarian snack.">See Recipe</button>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-center align-items-center rounded-top" style="height: 200px">
+                            <span class="text-muted">Image here</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-success">V</span>
+                                <span class="badge bg-info text-dark">15 mins</span>
+                                <span class="badge bg-warning text-dark">Breakfast</span>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Avocado Smash Toast</h5>
+                            <button class="btn btn-outline-primary w-100 mt-auto recipe-btn" data-bs-toggle="modal" data-bs-target="#masterRecipeModal" data-title="Avocado Smash Toast" data-desc="A classic, healthy start to your day.">See Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-center align-items-center rounded-top" style="height: 200px">
+                            <span class="text-muted">Image here</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-danger">HP</span>
+                                <span class="badge bg-primary">G</span>
+                                <span class="badge bg-info text-dark">30 mins</span>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Grilled Chicken Salad</h5>
+                            <button class="btn btn-outline-primary w-100 mt-auto recipe-btn" data-bs-toggle="modal" data-bs-target="#masterRecipeModal" data-title="Grilled Chicken Salad" data-desc="Lean protein packed with fresh greens.">See Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-center align-items-center rounded-top" style="height: 200px">
+                            <span class="text-muted">Image here</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-danger">HP</span>
+                                <span class="badge bg-dark">H</span>
+                                <span class="badge bg-info text-dark">30 mins</span>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Beef Stir-Fry</h5>
+                            <button class="btn btn-outline-primary w-100 mt-auto recipe-btn" data-bs-toggle="modal" data-bs-target="#masterRecipeModal" data-title="Beef Stir-Fry" data-desc="Quick and easy halal beef stir-fry.">See Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-center align-items-center rounded-top" style="height: 200px">
+                            <span class="text-muted">Image here</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-success">V</span>
+                                <span class="badge bg-primary">G</span>
+                                <span class="badge bg-info text-dark">30 mins</span>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Sweet Potato Wraps</h5>
+                            <button class="btn btn-outline-primary w-100 mt-auto recipe-btn" data-bs-toggle="modal" data-bs-target="#masterRecipeModal" data-title="Sweet Potato Wraps" data-desc="Gluten-free wraps filled with roasted sweet potatoes.">See Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-center align-items-center rounded-top" style="height: 200px">
+                            <span class="text-muted">Image here</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-danger">HP</span>
+                                <span class="badge bg-primary">G</span>
+                                <span class="badge bg-info text-dark">15 mins</span>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Spicy Salmon Bowl</h5>
+                            <button class="btn btn-outline-primary w-100 mt-auto recipe-btn" data-bs-toggle="modal" data-bs-target="#masterRecipeModal" data-title="Spicy Sriracha Salmon Bowl" data-desc="High protein, gluten-free super meal perfect for a quick, fiery dinner.">See Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-center align-items-center rounded-top" style="height: 200px">
+                            <span class="text-muted">Image here</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-success">V</span>
+                                <span class="badge bg-info text-dark">15 mins</span>
+                                <span class="badge bg-warning text-dark">Breakfast</span>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Greek Yoghurt Parfait</h5>
+                            <button class="btn btn-outline-primary w-100 mt-auto recipe-btn" data-bs-toggle="modal" data-bs-target="#masterRecipeModal" data-title="Greek Yoghurt Parfait" data-desc="A quick and creamy start to the day.">See Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-center align-items-center rounded-top" style="height: 200px">
+                            <span class="text-muted">Image here</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-success">V</span>
+                                <span class="badge bg-dark">H</span>
+                                <span class="badge bg-info text-dark">60 mins</span>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Lentil & Spinach Curry</h5>
+                            <button class="btn btn-outline-primary w-100 mt-auto recipe-btn" data-bs-toggle="modal" data-bs-target="#masterRecipeModal" data-title="Lentil & Spinach Curry" data-desc="A hearty, slow-cooked halal curry.">See Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="bg-secondary bg-opacity-25 d-flex justify-content-center align-items-center rounded-top" style="height: 200px">
+                            <span class="text-muted">Image here</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-danger">HP</span>
+                                <span class="badge bg-primary">G</span>
+                                <span class="badge bg-info text-dark">15 mins</span>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Protein Shake</h5>
+                            <button class="btn btn-outline-primary w-100 mt-auto recipe-btn" data-bs-toggle="modal" data-bs-target="#masterRecipeModal" data-title="Protein Shake" data-desc="The ultimate post-workout recovery fuel.">See Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
           </div>
        </div>
     </main>
         </div> 
-    </div> 
-</body>
+    </div>
 
+    <div class="modal fade" id="masterRecipeModal" tabindex="-1" aria-labelledby="recipeModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <h2 class="modal-title fs-3 fw-bold text-primary" id="recipeModalTitle">Recipe Title Placeholder</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-2 pb-4">
+                    <p id="recipeModalDesc" class="text-muted mb-4">Description placeholder</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <h5 class="fw-bold text-success">Ingredients</h5>
+                            <ul class="list-group list-group-flush border rounded">
+                                <li class="list-group-item">Sample Ingredient 1</li>
+                                <li class="list-group-item">Sample Ingredient 2</li>
+                                <li class="list-group-item">Sample Ingredient 3</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="fw-bold text-success">Method</h5>
+                            <ol class="list-group list-group-numbered list-group-flush border rounded">
+                                <li class="list-group-item">Prep your ingredients.</li>
+                                <li class="list-group-item">Cook thoroughly.</li>
+                                <li class="list-group-item">Serve and enjoy!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light border-top-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const modalTitleElement = document.getElementById('recipeModalTitle');
+            const modalDescElement = document.getElementById('recipeModalDesc');
+            const recipeButtons = document.querySelectorAll('.recipe-btn');
+
+            recipeButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const newTitle = this.getAttribute('data-title');
+                    const newDesc = this.getAttribute('data-desc');
+
+                    modalTitleElement.textContent = newTitle;
+                    modalDescElement.textContent = newDesc;
+                });
+            });
+        });
+    </script>
+</body>
 </html>
